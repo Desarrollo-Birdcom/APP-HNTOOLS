@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Alerta extends Model
+class Pedido extends Model
 {
     protected $fillable = [
-        'alerta_id',
-        'tipo',
-        'autor',
-        'destinatario'
+        'pedido_id',
+        'user_id',
+        'cantidad',
+        'tipo_solicitud',
+        ''
     ];
 }

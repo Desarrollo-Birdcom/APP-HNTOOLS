@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Nota extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'nota_id',
+        'proyecto_id',
+        'contenido'
+    ];
 }

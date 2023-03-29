@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Descarte extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'descarte_id',
+        'id_proyecto',
+        'causa'
+    ];
 }
